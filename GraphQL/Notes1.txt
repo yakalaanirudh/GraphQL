@@ -1,0 +1,52 @@
+https://countries.trevorblades.com/
+
+GraphQL is a query language.
+
+GraphQL acts as a layer between our front-end and back-end.
+Query languages like SQL act between back-end and the databse.
+This is the main difference between GRaphQL and Query Languages.
+
+In GraphQL GET is a query and PUT,POST,DELETE are Mutations.
+
+GraphQL works in the following way.
+    The front end communicates to GraphQL which communicates to the back end.
+
+
+REST has multiple end points but in GraphQL has only one end point.
+REST 
+
+Users{
+
+}
+
+Followers{
+
+}
+
+Posts{
+
+}
+
+GraphQL
+
+{
+    User{
+
+    }
+    Followers{
+
+    }
+    Posts{
+
+    }
+}
+
+In REST  we either overfetch or underfetch
+In REST Since we have 3 different objects we make three different queries(under fetching).
+But if we put all the data in one object then we fetch all the data(over fetching)
+
+But in GraphQL since there is only on end point we make only request specifying what we want specifically 
+so no over/under fetching.
+
+With REST we do something like we make the backend determine what data the front end wants.
+With GraphQL the front end telld GraphQL what it wants and then GraphQl tells backend.
